@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<!--<PublishSingleFile>true</PublishSingleFile>-->
+		<SelfContained>true</SelfContained>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PublishAot>true</PublishAot>
+		<InvariantGlobalization>true</InvariantGlobalization>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Content\Mod.cs" />
+		<Compile Remove="Content\Settings.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Content\.gitattributes" />
+		<None Remove="Content\.gitignore" />
+		<None Remove="Content\About.xml" />
+		<None Remove="Content\Directory.Build.props" />
+		<None Remove="Content\LICENSE" />
+		<None Remove="Content\Manifest.xml" />
+		<None Remove="Content\Project.xml" />
+		<None Remove="Content\Readme.md" />
+		<None Remove="Content\Solution.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Content\.gitattributes" />
+		<EmbeddedResource Include="Content\.gitignore" />
+		<EmbeddedResource Include="Content\About.xml" />
+		<EmbeddedResource Include="Content\Directory.Build.props" />
+		<EmbeddedResource Include="Content\LICENSE" />
+		<EmbeddedResource Include="Content\Manifest.xml" />
+		<EmbeddedResource Include="Content\Mod.cs" />
+		<EmbeddedResource Include="Content\Project.xml" />
+		<EmbeddedResource Include="Content\Readme.md" />
+		<EmbeddedResource Include="Content\Settings.cs" />
+		<EmbeddedResource Include="Content\Solution.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Drawing.Common" Version="8.0.3" />
+	</ItemGroup>
+
+</Project>

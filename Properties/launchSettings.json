@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "NewMod": {
+      "commandName": "Project",
+      "commandLineArgs": "HelloWorld \"Hello World\"",
+      "workingDirectory": "C:\\Users\\Brrainz\\Desktop"
+    }
+  }
+}

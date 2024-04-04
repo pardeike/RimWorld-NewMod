@@ -1,0 +1,11 @@
+﻿<Project>
+
+	<PropertyGroup>
+		<ModName>{modReadableName}</ModName>
+		<ModFileName>{modCompactName}</ModFileName>
+		<Repository>https://github.com/pardeike/CameraPlus</Repository>
+		<ModVersion>1.0.0.0</ModVersion>
+		<ProjectGuid>{projectId}</ProjectGuid>
+	</PropertyGroup>
+
+</Project>
